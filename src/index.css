@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #003580;
+  --transition: all 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

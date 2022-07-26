@@ -1,0 +1,38 @@
+.navbar {
+  height: 5rem;
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-btn {
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+  border-radius: 0.1rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-btn:hover {
+  opacity: 0.8;
+}
