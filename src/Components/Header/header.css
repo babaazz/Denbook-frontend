@@ -1,0 +1,142 @@
+.header {
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem 0 5rem 0;
+}
+
+.header-list {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.header-list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header-list-item.active {
+  border: 1px solid white;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.header-desc {
+  font-size: 1.7rem;
+}
+
+.header-search {
+  height: 30px;
+  background-color: white;
+  border: 3px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -27px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header-search-item {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 20px;
+  border: none;
+  padding: 10px 0;
+}
+.header-search-item:nth-child(1) {
+  width: 32%;
+}
+.header-search-item:nth-child(2) {
+  width: 28%;
+}
+.header-search-item:nth-child(3) {
+  width: 32%;
+}
+.header-search-item:last-child {
+  width: 8%;
+  background: #0072c2;
+  justify-content: center;
+}
+
+.header-search-item button {
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.header-search-item input {
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.header-search-text {
+  color: gray;
+}
+
+.search-bar-icon {
+  color: gray;
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 48px;
+}
+
+.options {
+  position: absolute;
+  top: 50px;
+  /* margin-left: 50px; */
+  background: #fff;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.options-item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+
+.options-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.options-item button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-primary);
+  color: black;
+  cursor: pointer;
+}
+
+.search-btn {
+  cursor: pointer;
+}
