@@ -11,11 +11,18 @@
   max-width: 1200px;
   margin: 1rem 0 5rem 0;
 }
+.header-container.list-mode {
+  margin: 1rem 0 0 0;
+}
 
 .header-list {
   display: flex;
   gap: 4rem;
   margin-bottom: 4rem;
+}
+
+.header-container.list-mode .header-list {
+  margin-bottom: 2rem;
 }
 
 .header-list-item {
@@ -103,12 +110,13 @@
 .date {
   position: absolute;
   top: 48px;
+  z-index: 10;
 }
 
 .options {
   position: absolute;
   top: 50px;
-  /* margin-left: 50px; */
+  z-index: 10;
   background: #fff;
   color: gray;
   border-radius: 5px;

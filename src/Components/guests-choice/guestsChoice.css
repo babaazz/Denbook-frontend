@@ -1,0 +1,44 @@
+.guest-choice {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.guest-choice-item {
+  flex: 1;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gc-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.gc-city {
+  font-weight: 300;
+}
+
+.gc-price {
+  font-weight: 700;
+}
+
+.gc-rating > button {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 3px;
+  margin-right: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
