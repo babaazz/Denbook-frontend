@@ -109,19 +109,20 @@
 
 .date {
   position: absolute;
-  top: 48px;
+  top: 45px;
   z-index: 10;
 }
 
 .options {
   position: absolute;
-  top: 50px;
+  top: 46px;
   z-index: 10;
   background: #fff;
   color: gray;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
 }
 
 .options-item {

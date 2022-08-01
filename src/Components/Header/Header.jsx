@@ -102,7 +102,11 @@ const Header = ({ type }) => {
                   onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
-              <div className="header-search-item">
+              <div
+                className="header-search-item"
+                onMouseEnter={() => setOpenDate(true)}
+                onMouseLeave={() => setOpenDate(false)}
+              >
                 <FaRegCalendarAlt className="search-bar-icon" />
                 <span
                   className="header-search-text"
@@ -123,10 +127,15 @@ const Header = ({ type }) => {
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
+                    minDate={new Date()}
                   />
                 )}
               </div>
-              <div className="header-search-item">
+              <div
+                className="header-search-item"
+                onMouseEnter={() => setOpenOptions(true)}
+                onMouseLeave={() => setOpenOptions(false)}
+              >
                 <IoPerson className="search-bar-icon" />
                 <span
                   className="header-search-text"

@@ -33,7 +33,7 @@ const HotelList = () => {
                 onChange={(e) => setDestination(e.target.value)}
               />
             </div>
-            <div className="list-item">
+            <div className="list-item" onMouseLeave={() => setOpenDate(false)}>
               <label>Check-in date</label>
               <span onClick={() => setOpenDate(!openDate)}>{`${
                 date[0].startDate
@@ -51,6 +51,7 @@ const HotelList = () => {
                   moveRangeOnFirstSelection={false}
                   ranges={date}
                   className="list-date"
+                  minDate={new Date()}
                 />
               )}
             </div>
@@ -71,7 +72,7 @@ const HotelList = () => {
                     type="number"
                     min={1}
                     className="ls-option-input"
-                    placeholder={options.adult}
+                    value={options.adults}
                   />
                 </div>
                 <div className="ls-option-item">
@@ -80,7 +81,7 @@ const HotelList = () => {
                     type="number"
                     min={0}
                     className="ls-option-input"
-                    placeholder={options.children}
+                    value={options.children}
                   />
                 </div>
                 <div className="ls-option-item">
@@ -89,7 +90,7 @@ const HotelList = () => {
                     type="number"
                     min={1}
                     className="ls-option-input"
-                    placeholder={options.room}
+                    value={options.rooms}
                   />
                 </div>
               </div>
